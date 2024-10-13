@@ -1,4 +1,4 @@
-module github.com/ctrl-hub/traefik.auditor
+module github.com/ctrl-hub/traefik-auditor
 
 go 1.22.0
 

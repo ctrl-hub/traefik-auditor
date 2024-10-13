@@ -1,4 +1,4 @@
-// Package traefiklogger is a traefik plugin that intercepts the request / response
+// Package traefik_auditor is a traefik plugin that intercepts the request / response
 // lifecycle and forwards the encapsulated log to a remote server
 package traefik_auditor
 
