@@ -3,4 +3,5 @@ type: middleware
 iconPath: .assets/icon.png
 import: github.com/ctrl-hub/traefik-auditor
 summary: "Intercepts and encapsulates a request/response and forwards the payload to a remote server"
-testData: {}
+testData:
+  remoteServer: "http://localhost:8080"
