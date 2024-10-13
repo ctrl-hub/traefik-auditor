@@ -6,7 +6,7 @@ This can be useful when you need to view the full request / response, for exampl
 
   - Auditing requests to an application
   - Debugging user issues based on the request / response
-  - Capturing requests for securit auditing / compliance
+  - Capturing requests for security auditing / compliance
   - Capturing requests for performance analysis
   - Capturing requests for data streaming
 
@@ -71,17 +71,15 @@ This forwarder sends the request and response body to a remote server in a JSON 
     "method": "GET",
     "content_length": 64,
     "path": "/my/endpoint",
-    "query": {
-      "raw": "a=b&a=c&x=z",
-      "parsed": {
-        "a": [
-          "b",
-          "c"
-        ],
-        "x": [
-          "z"
-        ]
-      }
+    "query": "a=b&a=c&x=z",
+    "raw_query": {
+      "a": [
+        "b",
+        "c"
+      ],
+      "x": [
+        "z"
+      ]
     },
     "headers": {
       "Connection": [
