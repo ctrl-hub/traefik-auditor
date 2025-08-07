@@ -88,6 +88,7 @@ func (logger *Logger) sendRecord(record *logRecord) error {
 	if err != nil {
 		return err
 	}
+	outboundReq.Header.Add("Content-Type", "application/json")
 
 	to, err := time.ParseDuration(logger.timeout)
 
